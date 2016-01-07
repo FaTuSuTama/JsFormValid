@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="document.registration.userid.focus()">
+    <form name="registration" method="post">
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="3"><h1>Registration Form</h1></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="userid">User ID:</label></td>
+                    <td><input onblur = "uidSubmit()" type="text" name="userid"/></td>
+                    <td id="userIdNotice"></td>
+                </tr>
+                <tr>
+                    <td><label for="passid">Password:</label></td>
+                    <td><input id="passid" onkeyup ="passSubmit()" type="password" name="passid"/></td>
+                    <td id="passNotice"></td>
+                </tr>
+                <tr>
+                    <td><label for="conPassid">Confirm Password:</label></td>
+                    <td><input id="conPassid" onkeyup="submitPassword()" type="password" name="conPassid"/></td>
+<!--                    <td><input onSubmit ="submitPassword()" type="submit" value="submit"></td>-->
+                    <td id="alartMassage"></td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </form>
+    <script src="myScript.js"></script>
+</body>
+</html>

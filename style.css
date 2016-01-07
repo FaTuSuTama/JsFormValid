@@ -1,0 +1,7 @@
+input:focus{ 
+    background-color: #eee;
+}
+thead h1{
+    margin: 0;
+    padding: 0;
+}
